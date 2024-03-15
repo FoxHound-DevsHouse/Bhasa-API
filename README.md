@@ -2,6 +2,22 @@
 
 This document outlines the various endpoints and request body structures for interacting with the Fireworks AI API for different tasks including Automatic Speech Recognition (ASR), Neural Machine Translation (NMT), and Text to Speech (TTS) functionalities.
 
+## Supported Languages and ISO Codes
+
+- **English (en)**
+- **Hindi (hi)**
+- **Urdu (ur)**
+- **Bengali (bn)**
+- **Marathi (mr)**
+- **Gujarati (gu)**
+- **Punjabi (pa)**
+- **Tamil (ta)**
+- **Telugu (te)**
+- **Kannada (kn)**
+- **Malayalam (ml)**
+
+These ISO codes can be used to specify the source and target languages in the request bodies for ASR, NMT, and TTS endpoints.
+
 ## ASR (Automatic Speech Recognition)
 
 **Endpoint:** `POST /asr`
@@ -81,8 +97,4 @@ This document outlines the various endpoints and request body structures for int
 }
 ```
 
-Feel free to adjust and expand this README file according to your specific project requirements and documentation standards.
-
---- 
-
-This README outlines the different endpoints and corresponding request bodies for the specified functionalities. You can use this as a reference for integrating your application with the Fireworks AI API.
+This README outlines the different endpoints and corresponding request bodies for the specified functionalities along with the supported languages and their ISO codes. You can use this as a reference for integrating your application with the Fireworks AI API.
