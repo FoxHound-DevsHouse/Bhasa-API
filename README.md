@@ -1,27 +1,24 @@
-# Bhasha-API
-Powering Our Solution
-```markdown
-# API Endpoints
+# Fireworks AI API Endpoints and Request Bodies
 
-## 1. ASR (Automatic Speech Recognition)
+This document outlines the various endpoints and request body structures for interacting with the Fireworks AI API for different tasks including Automatic Speech Recognition (ASR), Neural Machine Translation (NMT), and Text to Speech (TTS) functionalities.
 
-### POST /asr
+## ASR (Automatic Speech Recognition)
 
-**Request Body:**
+**Endpoint:** `POST /asr`
 
+**Body:**
 ```json
 {
-  "sourceLang": "hi", // ISO 639-1 language code
-  "base64Audio": "BASE64_ENCODED_AUDIO_DATA" // Base64 encoded WAV audio file
+  "sourceLang": "hi",
+  "base64Audio": "BASE64_ENCODED_AUDIO_DATA"
 }
 ```
 
-## 2. NMT (Neural Machine Translation)
+## NMT (Neural Machine Translation)
 
-### POST /nmt
+**Endpoint:** `POST /nmt`
 
-**Request Body:**
-
+**Body:**
 ```json
 {
   "sourceLang": "hi",
@@ -30,26 +27,24 @@ Powering Our Solution
 }
 ```
 
-## 3. TTS (Text to Speech)
+## TTS (Text to Speech)
 
-### POST /tts
+**Endpoint:** `POST /tts`
 
-**Request Body:**
-
+**Body:**
 ```json
 {
   "sourceLang": "hi",
   "text": "यह एक उदाहरण वाक्य है।",
-  "gender": "male" // or "female"
+  "gender": "male"
 }
 ```
 
-## 4. ASR + NMT (Speech to Text Translation)
+## ASR + NMT (Speech to Text Translation)
 
-### POST /asr_nmt
+**Endpoint:** `POST /asr_nmt`
 
-**Request Body:**
-
+**Body:**
 ```json
 {
   "sourceLang": "hi",
@@ -58,12 +53,11 @@ Powering Our Solution
 }
 ```
 
-## 5. NMT + TTS (Text Translation to Speech)
+## NMT + TTS (Text Translation to Speech)
 
-### POST /nmt_tts
+**Endpoint:** `POST /nmt_tts`
 
-**Request Body:**
-
+**Body:**
 ```json
 {
   "sourceLang": "en",
@@ -73,12 +67,11 @@ Powering Our Solution
 }
 ```
 
-## 6. ASR + NMT + TTS (Speech to Speech Translation)
+## ASR + NMT + TTS (Speech to Speech Translation)
 
-### POST /asr_nmt_tts
+**Endpoint:** `POST /asr_nmt_tts`
 
-**Request Body:**
-
+**Body:**
 ```json
 {
   "sourceLang": "hi",
@@ -87,4 +80,9 @@ Powering Our Solution
   "gender": "male"
 }
 ```
-```
+
+Feel free to adjust and expand this README file according to your specific project requirements and documentation standards.
+
+--- 
+
+This README outlines the different endpoints and corresponding request bodies for the specified functionalities. You can use this as a reference for integrating your application with the Fireworks AI API.
