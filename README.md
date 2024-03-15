@@ -1,4 +1,4 @@
-# Bhasa-API
+# Bhasha-API
 Powering Our Solution
 ```markdown
 # API Endpoints
