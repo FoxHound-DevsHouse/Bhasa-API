@@ -1,6 +1,4 @@
-# Fireworks AI API Endpoints and Request Bodies
 
-This document outlines the various endpoints and request body structures for interacting with the Fireworks AI API for different tasks including Automatic Speech Recognition (ASR), Neural Machine Translation (NMT), and Text to Speech (TTS) functionalities.
 
 ## Supported Languages and ISO Codes
 
